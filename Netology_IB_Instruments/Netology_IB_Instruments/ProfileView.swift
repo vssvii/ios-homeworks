@@ -2,21 +2,21 @@
 //  ProfileView.swift
 //  Netology_IB_Instruments
 //
-//  Created by Ibragim Assaibuldayev on 18.10.2021.
+//  Created by Ibragim Assaibuldayev on 21.11.2021.
 //
 
 import UIKit
 
 class ProfileView: UIView {
+
     
+    @IBOutlet weak var birth: UILabel!
     
-    @IBOutlet weak var myName: UILabel!
-    @IBOutlet weak var myImage: UIImageView!
-    @IBOutlet weak var myBirth: UILabel!
-    @IBOutlet weak var myText: UITextView!
-    @IBOutlet weak var myLocation: UILabel!
+    @IBOutlet weak var name: UILabel!
     
+    @IBOutlet weak var city: UILabel!
     
+    @IBOutlet weak var avatar: UIImageView!
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

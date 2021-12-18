@@ -11,6 +11,11 @@ class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let profileView = ProfileView()
+        
+        
+        
 
         // Do any additional setup after loading the view.
     }

@@ -2,7 +2,7 @@
 //  InfoViewController.swift
 //  Navigation_2
 //
-//  Created by Ibragim Assaibuldayev on 26.12.2021.
+//  Created by Ibragim Assaibuldayev on 12.01.2022.
 //
 
 import UIKit
@@ -13,27 +13,40 @@ class InfoViewController: UIViewController {
         super.viewDidLoad()
         
         
-        view.backgroundColor = .systemGray
+        view.backgroundColor = .systemRed
         
+        let buttonInfo = UIButton(frame: CGRect(x: 130, y: 200, width: 100, height: 50))
+        buttonInfo.backgroundColor = .systemGreen
+        buttonInfo.setTitle("Info", for: .normal)
+        buttonInfo.addTarget(self, action: #selector(buttonInfoAction), for: .touchUpInside)
         
-        let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
-        button.backgroundColor = .systemCyan
-        button.setTitle("Alert", for: .normal)
-        button.addTarget(self, action: #selector(alertAction), for: .touchUpInside)
+        self.view.addSubview(buttonInfo)
     }
     
+    @objc func buttonInfoAction(sender: UIButton!) {
+        let alertController = UIAlertController(title: "Cообщение!", message: "Сообщение!", preferredStyle: .alert)
+        
+        let saveAction = UIAlertAction(title: "Сохранить", style: .default, handler:nil)
+        
+        let cancelAction = UIAlertAction(title: "Отмена", style: .destructive, handler: nil)
+        
+        alertController.addAction(saveAction)
+        alertController.addAction(cancelAction)
+        present(alertController, animated: true, completion: nil)
+        
+        
+        }
     
-    @objc func alertAction() {
-        let alert = UIAlertController(title: "Да", message: "Вы уверены?", preferredStyle: UIAlertController.Style.alert)
-
-        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: { _ in
-            //Cancel Action
-        }))
-        alert.addAction(UIAlertAction(title: "Sign out",
-                                      style: UIAlertAction.Style.destructive,
-                                      handler: {(_: UIAlertAction!) in
-                                        //Sign out action
-        }))
-        self.present(alert, animated: true, completion: nil)
-    }
 }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+

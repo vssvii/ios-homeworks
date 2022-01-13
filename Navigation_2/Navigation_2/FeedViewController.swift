@@ -8,14 +8,23 @@
 import UIKit
 
 class FeedViewController: UIViewController {
-
+    
+    let image = UIImage(named: "feedView")
+    var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         view.backgroundColor = .systemGreen
         
-        let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+        imageView = UIImageView(frame: CGRect(x: 40, y: 200, width: 300, height: 200))
+        imageView.contentMode = .scaleToFill
+        imageView.image = image
+        view.addSubview(imageView)
+        
+        
+        
+        let button = UIButton(frame: CGRect(x: 130, y: 500, width: 100, height: 50))
         button.backgroundColor = .systemPurple
         button.setTitle("Post View", for: .normal)
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
@@ -25,18 +34,14 @@ class FeedViewController: UIViewController {
     
     @objc func buttonAction(sender: UIButton!) {
         let postViewController = PostViewController()
-        postViewController.title = "Пост"
-        self.present(postViewController, animated: true, completion: nil)
-        
-        postViewController.navigationItem.rightBarButtonItem  = UIBarButtonItem(title: "Back",
-                                                                                style: .done,
-                                                                                target: self,
-                                                                                action: nil)
-        
+        postViewController.modalPresentationStyle = .overCurrentContext
+        navigationController?.pushViewController(postViewController, animated: true)
     }
+
+    
     
     struct Post {
-    let title: String
+    var title: String
         
     }
     

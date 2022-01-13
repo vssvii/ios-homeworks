@@ -15,7 +15,7 @@
 		4B02DA662778C5DA00023AF4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B02DA652778C5DA00023AF4 /* FeedViewController.swift */; };
 		4B02DA682778C5FF00023AF4 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B02DA672778C5FF00023AF4 /* PostViewController.swift */; };
 		4B02DA6A2778CB7900023AF4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B02DA692778CB7900023AF4 /* ProfileViewController.swift */; };
-		4B02DA6C2778DE2B00023AF4 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B02DA6B2778DE2B00023AF4 /* InfoViewController.swift */; };
+		4B622E5D278F1A58002139EE /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B622E5C278F1A58002139EE /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		4B02DA652778C5DA00023AF4 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		4B02DA672778C5FF00023AF4 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		4B02DA692778CB7900023AF4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		4B02DA6B2778DE2B00023AF4 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		4B622E5C278F1A58002139EE /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 				4B02DA652778C5DA00023AF4 /* FeedViewController.swift */,
 				4B02DA692778CB7900023AF4 /* ProfileViewController.swift */,
 				4B02DA672778C5FF00023AF4 /* PostViewController.swift */,
-				4B02DA6B2778DE2B00023AF4 /* InfoViewController.swift */,
+				4B622E5C278F1A58002139EE /* InfoViewController.swift */,
 				4B02DA572778C52300023AF4 /* Main.storyboard */,
 				4B02DA5A2778C52500023AF4 /* Assets.xcassets */,
 				4B02DA5C2778C52500023AF4 /* LaunchScreen.storyboard */,
@@ -151,7 +151,7 @@
 				4B02DA562778C52300023AF4 /* ViewController.swift in Sources */,
 				4B02DA6A2778CB7900023AF4 /* ProfileViewController.swift in Sources */,
 				4B02DA662778C5DA00023AF4 /* FeedViewController.swift in Sources */,
-				4B02DA6C2778DE2B00023AF4 /* InfoViewController.swift in Sources */,
+				4B622E5D278F1A58002139EE /* InfoViewController.swift in Sources */,
 				4B02DA522778C52300023AF4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

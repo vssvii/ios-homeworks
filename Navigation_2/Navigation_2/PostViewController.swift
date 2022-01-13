@@ -12,26 +12,22 @@ class PostViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let feed = FeedViewController()
-        feed.title = "Пост"
+        view.backgroundColor = .systemMint
+        let feedView = FeedViewController()
+        var feedPost = feedView.post
+        feedPost.title = "Пост"
         
-        view.backgroundColor = .systemBlue
-        
-        let barButton = UIBarButtonItem(title: "Info", style: .done, target: self, action: #selector(didBarButton))
-        configureItem()
+        configureItems()
     }
     
-    func configureItem() {
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add,
-                                                                 target: self,
-                                                                 action: #selector(didBarButton))
+    func configureItems() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "person.circle"), style: .done, target: self, action: #selector(barButtonAction))
     }
     
-    @objc func didBarButton(sender: Any) {
-        let infoView = InfoViewController()
-        self.present(infoView, animated: false, completion: nil)
+    @objc func barButtonAction(sender: UIBarButtonItem!) {
+        let infoViewController = InfoViewController()
+        navigationController?.pushViewController(infoViewController, animated: true)
     }
-                                    
-                                            
+    
+    
 }
-

@@ -21,7 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let feedViewItem = UITabBarItem()
         feedViewItem.title = "Лента пользователя"
-        feedViewItem.selectedImage = UIImage(named: "profile")
         let feedView = FeedViewController()
         feedView.title = "Лента пользователя"
         feedView.tabBarItem = feedViewItem
@@ -29,7 +28,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let profileItem = UITabBarItem()
         profileItem.title = "Профиль"
-        profileItem.selectedImage = UIImage(named: "feedView")
         let profile = ProfileViewController()
         profile.title = "Профиль"
         profile.tabBarItem = profileItem
@@ -39,7 +37,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = [feedViewNavigationController, profileViewNavigationController]
         tabBarController.selectedIndex = 0
-        
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
         

@@ -22,13 +22,10 @@ class FeedViewController: UIViewController {
         imageView.image = image
         view.addSubview(imageView)
         
-        
-        
         let button = UIButton(frame: CGRect(x: 130, y: 500, width: 100, height: 50))
         button.backgroundColor = .systemPurple
         button.setTitle("Post View", for: .normal)
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-        
         self.view.addSubview(button)
     }
     
@@ -38,11 +35,8 @@ class FeedViewController: UIViewController {
         navigationController?.pushViewController(postViewController, animated: true)
     }
 
-    
-    
     struct Post {
     var title: String
-        
     }
     
     var post = Post(title: "Пост")

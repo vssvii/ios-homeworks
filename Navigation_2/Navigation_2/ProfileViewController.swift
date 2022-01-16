@@ -20,9 +20,7 @@ class ProfileViewController: UIViewController {
         imageViewProfile.image = imageProfile
         view.addSubview(imageViewProfile)
         
-        
         view.backgroundColor = .systemPurple
-
     }
 }
 

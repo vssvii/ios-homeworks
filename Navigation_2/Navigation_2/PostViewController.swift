@@ -14,8 +14,7 @@ class PostViewController: UIViewController {
         
         view.backgroundColor = .systemMint
         let feedView = FeedViewController()
-        var feedPost = feedView.post
-        feedPost.title = "Пост"
+        self.title = feedView.post.title
         
         configureItems()
     }
@@ -26,7 +25,7 @@ class PostViewController: UIViewController {
     
     @objc func barButtonAction(sender: UIBarButtonItem!) {
         let infoViewController = InfoViewController()
-        navigationController?.pushViewController(infoViewController, animated: true)
+        present(infoViewController, animated: true, completion: nil)
     }
     
     

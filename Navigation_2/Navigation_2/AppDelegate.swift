@@ -11,9 +11,7 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
@@ -33,13 +31,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         profile.tabBarItem = profileItem
         let profileViewNavigationController = UINavigationController(rootViewController: profile)
         
-        
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = [feedViewNavigationController, profileViewNavigationController]
         tabBarController.selectedIndex = 0
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
-        
         
         return true
     }

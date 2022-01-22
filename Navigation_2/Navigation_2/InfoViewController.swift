@@ -31,7 +31,7 @@ class InfoViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
         }
     
-    func showMessage(){
+    func showMessage() {
         let alertMessage = UIAlertController(title: "Внимание!", message: "Сообщение выявлено!", preferredStyle: .actionSheet)
         let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alertMessage.addAction(alertAction)

@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let feedViewItem = UITabBarItem()
         feedViewItem.title = "Лента пользователя"
+        feedViewItem.image = UIImage(systemName: "house.fill")
         let feedView = FeedViewController()
         feedView.title = "Лента пользователя"
         feedView.tabBarItem = feedViewItem
@@ -26,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let profileItem = UITabBarItem()
         profileItem.title = "Профиль"
+        profileItem.image = UIImage(systemName: "person.fill")
         let profile = ProfileViewController()
         profile.title = "Профиль"
         profile.tabBarItem = profileItem

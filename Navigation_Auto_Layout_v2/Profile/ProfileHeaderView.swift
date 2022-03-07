@@ -11,6 +11,16 @@ class ProfileHeaderView: UIView {
     
     private var statusText: String?
     
+    var statusLabel: UILabel = {
+        let statusLabel = UILabel()
+        statusLabel.textAlignment = .center
+        statusLabel.font = .boldSystemFont(ofSize: 14)
+        statusLabel.textColor = .gray
+        statusLabel.text = "Напишите статус"
+        statusLabel.translatesAutoresizingMaskIntoConstraints = false
+        return statusLabel
+    }()
+    
     override func draw(_ rect: CGRect) {
         guard let ctx = UIGraphicsGetCurrentContext() else {
             return
@@ -75,14 +85,8 @@ class ProfileHeaderView: UIView {
         statusTextField.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -16.0).isActive = true
         statusTextField.heightAnchor.constraint(equalToConstant: 40.0).isActive = true
         
-        let statusLabel = UILabel()
-        statusLabel.textAlignment = .center
-        statusLabel.font = .boldSystemFont(ofSize: 14)
-        statusLabel.textColor = .gray
-        statusLabel.text = statusText
         self.addSubview(statusLabel)
-        
-        statusLabel.translatesAutoresizingMaskIntoConstraints = false
+
         statusLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor).isActive = true
         statusLabel.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         statusLabel.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
@@ -105,12 +109,12 @@ class ProfileHeaderView: UIView {
     }
     
     
-    @objc func statusTextChanged(_ textField: UITextField) {
+    @objc func statusTextChanged(_ textField: UITextField) -> String? {
         statusText = textField.text
+        return statusText
     }
     
-    @objc func buttonPressed() -> String? {
-        let status = statusText
-        return status
+    @objc func buttonPressed() {
+        statusLabel.text = statusText
     }
 }

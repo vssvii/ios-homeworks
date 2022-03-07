@@ -16,11 +16,12 @@
 		4B02DA682778C5FF00023AF4 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B02DA672778C5FF00023AF4 /* PostViewController.swift */; };
 		4B02DA6A2778CB7900023AF4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B02DA692778CB7900023AF4 /* ProfileViewController.swift */; };
 		4B2F12762797329A004AE7CE /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2F12752797329A004AE7CE /* ProfileHeaderView.swift */; };
+		4B4B0C3127D38DDB006B6A67 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4B0C3027D38DDB006B6A67 /* LogInViewController.swift */; };
 		4B622E5D278F1A58002139EE /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B622E5C278F1A58002139EE /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4B02DA4E2778C52300023AF4 /* Navigation_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B02DA4E2778C52300023AF4 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B02DA512778C52300023AF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B02DA552778C52300023AF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4B02DA582778C52300023AF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -31,6 +32,7 @@
 		4B02DA672778C5FF00023AF4 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		4B02DA692778CB7900023AF4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4B2F12752797329A004AE7CE /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		4B4B0C3027D38DDB006B6A67 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		4B622E5C278F1A58002139EE /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,7 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				4B2F12742797321B004AE7CE /* Profile */,
-				4B02DA502778C52300023AF4 /* Navigation_2 */,
+				4B02DA502778C52300023AF4 /* Navigation */,
 				4B02DA4F2778C52300023AF4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,12 +59,12 @@
 		4B02DA4F2778C52300023AF4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4B02DA4E2778C52300023AF4 /* Navigation_2.app */,
+				4B02DA4E2778C52300023AF4 /* Project.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4B02DA502778C52300023AF4 /* Navigation_2 */ = {
+		4B02DA502778C52300023AF4 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
 				4B02DA512778C52300023AF4 /* AppDelegate.swift */,
@@ -75,7 +77,7 @@
 				4B02DA5C2778C52500023AF4 /* LaunchScreen.storyboard */,
 				4B02DA5F2778C52500023AF4 /* Info.plist */,
 			);
-			path = Navigation_2;
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		4B2F12742797321B004AE7CE /* Profile */ = {
@@ -83,6 +85,7 @@
 			children = (
 				4B02DA692778CB7900023AF4 /* ProfileViewController.swift */,
 				4B2F12752797329A004AE7CE /* ProfileHeaderView.swift */,
+				4B4B0C3027D38DDB006B6A67 /* LogInViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -90,9 +93,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4B02DA4D2778C52300023AF4 /* Navigation_2 */ = {
+		4B02DA4D2778C52300023AF4 /* Project */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4B02DA622778C52500023AF4 /* Build configuration list for PBXNativeTarget "Navigation_2" */;
+			buildConfigurationList = 4B02DA622778C52500023AF4 /* Build configuration list for PBXNativeTarget "Project" */;
 			buildPhases = (
 				4B02DA4A2778C52300023AF4 /* Sources */,
 				4B02DA4B2778C52300023AF4 /* Frameworks */,
@@ -102,9 +105,9 @@
 			);
 			dependencies = (
 			);
-			name = Navigation_2;
+			name = Project;
 			productName = Navigation_2;
-			productReference = 4B02DA4E2778C52300023AF4 /* Navigation_2.app */;
+			productReference = 4B02DA4E2778C52300023AF4 /* Project.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -122,7 +125,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4B02DA492778C52300023AF4 /* Build configuration list for PBXProject "Navigation_2" */;
+			buildConfigurationList = 4B02DA492778C52300023AF4 /* Build configuration list for PBXProject "Project" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -135,7 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4B02DA4D2778C52300023AF4 /* Navigation_2 */,
+				4B02DA4D2778C52300023AF4 /* Project */,
 			);
 		};
 /* End PBXProject section */
@@ -162,6 +165,7 @@
 				4B02DA562778C52300023AF4 /* ViewController.swift in Sources */,
 				4B02DA6A2778CB7900023AF4 /* ProfileViewController.swift in Sources */,
 				4B02DA662778C5DA00023AF4 /* FeedViewController.swift in Sources */,
+				4B4B0C3127D38DDB006B6A67 /* LogInViewController.swift in Sources */,
 				4B2F12762797329A004AE7CE /* ProfileHeaderView.swift in Sources */,
 				4B622E5D278F1A58002139EE /* InfoViewController.swift in Sources */,
 				4B02DA522778C52300023AF4 /* AppDelegate.swift in Sources */,
@@ -320,6 +324,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -347,6 +352,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,7 +369,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4B02DA492778C52300023AF4 /* Build configuration list for PBXProject "Navigation_2" */ = {
+		4B02DA492778C52300023AF4 /* Build configuration list for PBXProject "Project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B02DA602778C52500023AF4 /* Debug */,
@@ -372,7 +378,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4B02DA622778C52500023AF4 /* Build configuration list for PBXNativeTarget "Navigation_2" */ = {
+		4B02DA622778C52500023AF4 /* Build configuration list for PBXNativeTarget "Project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B02DA632778C52500023AF4 /* Debug */,

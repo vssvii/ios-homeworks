@@ -8,7 +8,6 @@
 import UIKit
 
 
-
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -29,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let profileItem = UITabBarItem()
         profileItem.title = "Профиль"
         profileItem.image = UIImage(systemName: "person.fill")
-        let profile = ProfileViewController()
+        let profile = LogInViewController()
         profile.title = "Профиль"
         profile.tabBarItem = profileItem
         let profileViewNavigationController = UINavigationController(rootViewController: profile)
@@ -43,3 +42,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 }
+

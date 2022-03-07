@@ -11,6 +11,7 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,8 +28,5 @@ class ProfileViewController: UIViewController {
         profileHeader.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
         profileHeader.heightAnchor.constraint(equalTo: view.heightAnchor, constant: 220).isActive = true
     }
-    
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-    }
 }
+

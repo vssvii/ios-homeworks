@@ -9,7 +9,7 @@ import UIKit
 
 class PostTableViewCell: UITableViewCell {
 
-    private lazy var authorLabel: UILabel = {
+    public lazy var authorLabel: UILabel = {
         let authorLabel = UILabel()
         
         authorLabel.font = UIFont.boldSystemFont(ofSize: 20)
@@ -20,7 +20,7 @@ class PostTableViewCell: UITableViewCell {
         return authorLabel
     }()
     
-    private lazy var postView : UIImageView = {
+    public lazy var postView : UIImageView = {
         let postView = UIImageView()
         postView.translatesAutoresizingMaskIntoConstraints = false
         postView.contentMode = .scaleAspectFill
@@ -29,7 +29,7 @@ class PostTableViewCell: UITableViewCell {
     }()
 
     
-    private lazy var descriptionLabel : UILabel = {
+    public lazy var descriptionLabel : UILabel = {
         let descriptionLabel = UILabel()
         descriptionLabel.font = UIFont.systemFont(ofSize: 14)
         descriptionLabel.textColor = .lightGray
@@ -41,7 +41,7 @@ class PostTableViewCell: UITableViewCell {
         return descriptionLabel
     }()
     
-    private lazy var likesLabel : UILabel = {
+    public lazy var likesLabel : UILabel = {
         let likesLabel = UILabel()
         likesLabel.font = UIFont.systemFont(ofSize: 16)
         likesLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -50,7 +50,7 @@ class PostTableViewCell: UITableViewCell {
         return likesLabel
     }()
     
-    private lazy var viewsLabel : UILabel = {
+    public lazy var viewsLabel : UILabel = {
         let viewsLabel = UILabel()
         viewsLabel.font = UIFont.systemFont(ofSize: 16)
         viewsLabel.translatesAutoresizingMaskIntoConstraints = false

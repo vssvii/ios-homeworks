@@ -22,7 +22,7 @@ class FeedViewController: UIViewController {
         imageView.image = image
         view.addSubview(imageView)
         
-        let button = UIButton(frame: CGRect(x: 130, y: 500, width: 80, height: 50))
+        let button = UIButton(frame: CGRect(x: 130, y: 500, width: 100, height: 50))
         button.backgroundColor = .systemPurple
         button.setTitle("Post View", for: .normal)
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
